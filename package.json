@@ -1,0 +1,20 @@
+{
+  "name": "transfer-issues",
+  "version": "1.0.0",
+  "description": "CLI to copy a repository with meta data such as issues, labels, etc",
+  "bin": "cli.js",
+  "type": "module",
+  "keywords": [],
+  "author": "Gregor Martynus (https://twitter.com/gr2m)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "octokit": "^1.0.5"
+  },
+  "repository": "github:gr2m/transfer-issues",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}

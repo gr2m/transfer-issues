@@ -1,0 +1,29 @@
+query ($owner: String!, $repo: String!) {
+  repository(owner: $owner, name: $repo) {
+    id
+    collaborators(first: 100) {
+      edges {
+        permission
+        node {
+          login
+        }
+      }
+    }
+    milestones(first: 100) {
+      nodes {
+        title
+        description
+        closed
+        dueOn
+        number
+      }
+    }
+    labels(first: 100) {
+      nodes {
+        name
+        description
+        color
+      }
+    }
+  }
+}
